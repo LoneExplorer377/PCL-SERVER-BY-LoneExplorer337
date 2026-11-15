@@ -29,7 +29,7 @@ dotnet build -c Release      # 0 错误 / 254 警告 / 约 50 秒
 | `assets/manifest/` | 两个 `.resources` 原始 blob |
 | `assets/unpacked/` | 全部 131 个资源条目（61 BAML + 48 PNG + 2 JPG + ICO + TTF + 18 个 DLL/数据包） |
 | `tools/` | 资源提取、构建、冒烟脚本与 PE 元数据读取器 |
-| `_backup_PCL/` | ILSpy 原始输出（仅本地对照，因含第三方联系信息未纳入仓库） |
+| `_backup_PCL/` | ILSpy 反编译原始输出（未做任何修改），已单独发布在 [PCL2-2.14-DECOMPILED-BY-LoneExplorer337](https://github.com/LoneExplorer377/PCL2-2.14-DECOMPILED-BY-LoneExplorer337) |
 
 ## 新增功能与改动（相对原版 2.14）
 
