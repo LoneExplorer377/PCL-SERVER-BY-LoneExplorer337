@@ -1,0 +1,19 @@
+# 编译产物
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# PCL 运行时生成（配置、日志、服务端实例、游戏目录）
+PCL/
+.minecraft/
+
+# 系统文件
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 反编译原始输出（与 src/ 重复，含第三方联系信息）与界面截图（含本机路径）
+_backup_PCL/
+screenshots/
