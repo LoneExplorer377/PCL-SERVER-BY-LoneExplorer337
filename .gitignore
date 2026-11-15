@@ -6,8 +6,9 @@ obj/
 .vs/
 
 # PCL 运行时生成（配置、日志、服务端实例、游戏目录）
-PCL/
-.minecraft/
+# 仅根目录下的运行期目录（注意必须锚定，否则会误伤 src/PCL 源码目录）
+/PCL/
+/.minecraft/
 
 # 系统文件
 Thumbs.db
