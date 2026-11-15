@@ -2,6 +2,8 @@
 
 对 `plain craft launcher 2.exe`（Plain Craft Launcher 2，v2.14.0.0，快照版，sha256 `77fbc26a…753f0`）的完整反编译、资源提取与工程还原。**工程可编译、可运行**，界面与网络行为与原版一致。
 
+> **制作**：本项目的逆向还原、服务端模式与全部改造，由 **DSH**（DeepSeek Harness 编码智能体，模型 **DeepSeek-V4.1-Flash-1017**）完成；项目维护者与需求方为 **LoneExplorer337**。
+
 详细分析见 **[REPORT.md](REPORT.md)**。
 
 本分支已重新品牌化：程序名 **PCL SERVER**（产物 `PCL SERVER.exe`），版本 **1.0.0-alpha**（内部版本号 1，构建类型 Release/Alpha）；程序图标、窗口图标与关于页头像沿用原版 PCL 素材（与原版字节一致）。关于页保留原作者信息，并新增修改者 **LoneExplorer337**。
@@ -27,7 +29,7 @@ dotnet build -c Release      # 0 错误 / 254 警告 / 约 50 秒
 | `assets/manifest/` | 两个 `.resources` 原始 blob |
 | `assets/unpacked/` | 全部 131 个资源条目（61 BAML + 48 PNG + 2 JPG + ICO + TTF + 18 个 DLL/数据包） |
 | `tools/` | 资源提取、构建、冒烟脚本与 PE 元数据读取器 |
-| `_backup_PCL/` | ILSpy 原始输出，仅作对照，不参与编译 |
+| `_backup_PCL/` | ILSpy 原始输出（仅本地对照，因含第三方联系信息未纳入仓库） |
 
 ## 新增功能与改动（相对原版 2.14）
 
@@ -75,4 +77,9 @@ ILSpy 输出**不能直接编译**，也不一定能正确运行。本工程相�
 
 ## 免责声明
 
-本项目为逆向工程产物，**仅供学习研究与兼容性验证**。程序著作权归 PCL 作者（Meloong-Git）与「成都瓜皮龙科技有限公司」所有；内嵌第三方库遵循各自许可。请勿再分发或用于商业用途。本分支的修改（品牌、服务端模式、UI 调整）由 LoneExplorer337 完成，不代表原作者。
+本项目为逆向工程产物，**仅供学习研究与兼容性验证**，不得用于商业用途。
+
+- **著作权**：Plain Craft Launcher 2 的源码与素材著作权归原作者（Meloong-Git）及「成都瓜皮龙科技有限公司」所有；本仓库不主张任何原创权利，只作为学习材料托管。若权利人提出异议，仓库将立即下架。
+- **第三方**：内嵌的 Newtonsoft.Json、NAudio、MeloongCore、CacheCow、Ookii.Dialogs.Wpf、PCLCS 等组件遵循各自许可（多为 MIT / Apache-2.0 / MS-PL），请以各项目原始许可为准。
+- **责任**：本分支的修改（品牌化、服务端模式、界面与下载改动、移除更新与赞助界面）由 LoneExplorer337 与 DSH + DeepSeek-V4.1-Flash-1017 完成，**不代表原作者立场**，也不为其质量或行为背书。使用本程序造成的任何后果由使用者自行承担。
+- **无担保**：按「现状」提供，不附带任何明示或默示担保。

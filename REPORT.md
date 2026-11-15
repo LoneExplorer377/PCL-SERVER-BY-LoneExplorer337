@@ -3,6 +3,7 @@
 > 目标：`plain craft launcher 2.exe`（Plain Craft Launcher 2.14.0.0 官方发布版，Minecraft 启动器）
 > 产出：完整可编译源码工程、全部内嵌资源、本报告。
 > 分析环境：Windows 11 / .NET SDK 11.0.100-rc.1 / ilspycmd 11.2.0.10050。
+> 制作：逆向、还原、改造与本文档由 **DSH（DeepSeek Harness）+ DeepSeek-V4.1-Flash-1017** 完成，维护者 **LoneExplorer337**。
 
 ---
 
